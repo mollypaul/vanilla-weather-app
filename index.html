@@ -13,10 +13,53 @@
 </head>
 <body>
   <div class="container">
-    <h1>
-      Hello World
-    </h1>
-    <a href="" class="btn btn-primary">Click me</a>
+    <div class="weather-app">
+      <div class="row">
+        <div class="col-5">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Enter city">
+          </div>
+        </div>
+        <div class="col-2">          
+          <button class="btn btn-primary" type="button">Search</button>
+          <button class="btn btn-success" type="button">Current</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-5">
+          <h1>
+            Olathe, KS
+          </h1>
+          <h2>
+            Tuesday
+          </h2>
+          <h5>
+            04/27/2021
+          </h5>
+          <ul>
+            <li>Percipitation: %</li>
+            <li>Humidity: %</li>
+            <li>Wind: mph</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3">
+          <img 
+            src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+            alt="" 
+          />
+          68°F | °C
+        </div>
+      </div>
+      <small>
+        <a 
+          href="https://github.com/mollypaul/vanilla-weather-app.git"
+          target="_blank">
+          Open-source code</a>
+          by Molly Martin
+      </small>
+    </div>
   </div>
     
   <script src="src/app.js"></script>
