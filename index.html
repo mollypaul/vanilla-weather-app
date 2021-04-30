@@ -15,38 +15,49 @@
 <body>
   <div class="container">
     <div class="weather-app-wrapper">
-      <div class="row">
-        <div class="col-5">
-          <div class="input-group">
-            <input type="text" class="form-control" placeholder="Enter city">
+      <div class="weather-app">
+        <div class="row">
+          <div class="col-5">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Enter city">
+            </div>
+          </div>
+          <div class="col-sm">          
+            <button class="btn btn-primary" type="button">Search</button>
+            <button class="btn btn-success" type="button">Current</button>
           </div>
         </div>
-        <div class="col-sm">          
-          <button class="btn btn-primary" type="button">Search</button>
-          <button class="btn btn-success" type="button">Current</button>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-6">
-          <h1>
-            Olathe, KS
-          </h1>
-        <ul>
-          <li>
-            Tuesday 12:11 AM
-          </li>
-          <li>
-            Clear
-          </li>
-        </ul>
+
         <div class="row">
           <div class="col-6">
-            <img 
-              src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
-              alt="sun" 
-            />
-            68°F | °C
+            <h1>
+              Olathe, KS
+            </h1>
+            <ul>
+              <li>
+                Tuesday 12:11 AM
+              </li>
+              <li>
+                Clear
+              </li>
+            </ul>
           </div>
+        </div>
+
+        <div class="row">
+          <div class="col-6">
+            <div class="clearfix weather-temperature">
+              <img 
+                src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+                alt="sun" 
+                class="float-left"
+              />
+              <div class="float-left">
+                <strong>68</strong><span class="units">°F | <a href="#">°C</a></span>
+              </div>
+            </div>
+          </div>
+
           <div class="col-6">
             <ul>
               <li>
@@ -62,15 +73,17 @@
           </div>
         </div>
       </div>
-      <small>
-        <a 
-          href="https://github.com/mollypaul/vanilla-weather-app.git"
-          target="_blank">
-          Open-source code
-        </a>
-        by Molly Martin
-    </small>
-  </div>
-  <script src="src/app.js"></script>
-</body>
+      
+          <small>
+            <a 
+              href="https://github.com/mollypaul/vanilla-weather-app.git"
+              target="_blank">
+              Open-source code
+            </a>
+              by Molly Martin
+          </small>
+    </div>
+    </div>
+    <script src="src/app.js"></script>
+  </body>
 </html>
