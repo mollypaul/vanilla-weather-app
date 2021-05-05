@@ -9,6 +9,7 @@
   rel="stylesheet" 
   integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" 
   crossorigin="anonymous">
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <link rel="stylesheet" href="src/style.css" />
   <title>Weather App</title>
 </head>
@@ -30,16 +31,12 @@
 
         <div class="row">
           <div class="col-6">
-            <h1>
-              Olathe, KS
-            </h1>
+            <h1 id="city"></h1>
             <ul>
               <li>
                 Tuesday 12:11 AM
               </li>
-              <li>
-                Clear
-              </li>
+              <li id="description"></li>
             </ul>
           </div>
         </div>
@@ -53,7 +50,7 @@
                 class="float-left"
               />
               <div class="float-left">
-                <strong>68</strong><span class="units">°F | <a href="#">°C</a></span>
+                <strong id="temperature"></strong><span class="units">°F | <a href="#">°C</a></span>
               </div>
             </div>
           </div>
@@ -64,10 +61,10 @@
                 Percipitation: %
               </li>
               <li>
-                Humidity: %
+                Humidity: <span id="humidity"></span>%
               </li>
               <li>
-                Wind: mph
+                Wind: <span id="wind"></span>km/h
               </li>
             </ul>
           </div>
